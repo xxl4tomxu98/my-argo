@@ -2,7 +2,7 @@
 
 The accompanying repository for the GitOps Master Class - Argo CD AppProjects 
 
-> YOUTUBE VIDEO WILL GO HERE
+> [How to be an Argo CD Project Champion](https://www.youtube.com/watch?v=LSejrYaYcBI)
 
 Argo CD Application Project (AppProject) is a logical grouping mechanism that defines boundaries and access controls for applications within Argo CD. It enables administrators to enforce policies on which Git repositories, Kubernetes namespaces, and Kubernetes Objects applications can manage. 
 
@@ -16,7 +16,7 @@ In this Master Class we’ll be going over:
 
 ## Using This Repository
 
-This repository makes use of [Codespaces](https://github.com/features/codespaces), the free tier should be sufficent for this as long as you have enough credits.
+This repository makes use of [Codespaces](https://github.com/features/codespaces), the free tier should be sufficient for this as long as you have enough credits.
 
 You start by clicking on "Use this template" on the top right corner  and select "Create a new repository" from the dropdown.
 
@@ -34,7 +34,7 @@ This will launch your Codespace in a new tab. Once it's ready, you'll see a VSCo
 
 :rotating_light: **DO NOT DO ANYTHING YET** :rotating_light:, it takes about 30ish seconds for the post-setup scripts to finish. You will see the following in your terminal section of your Codespace when the post-setup scripts are running:
 
-![waiting for postsetup](images/wait_for_post_commands.png)
+![waiting for post setup](images/wait_for_post_commands.png)
 
 Once, the setup scripts are done your terminal prompt will return and your codespace should look something like this:
 
