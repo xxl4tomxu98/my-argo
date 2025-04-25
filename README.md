@@ -80,6 +80,11 @@ In the "PORTS" overview, you'll see a row that says "Argo CD Dashboard", click o
 
 This opens the Argo CD Dashboard in a new tab. You can login with the username `admin` and password of `password`
 
+To add a new user do `kubectl patch -n argocd cm argocd-cm --type='merge' -p='{"data": {"accounts.ytx": "apiKey, login"}}'`
+Or you can do `kubectl edit -n argocd cm argocd-cm` and
+add line `accounts.ytx: apiKey, login` on line 7 and then use argocd CLI to add password fo the new user:
+`argocd account update-password --account=ytx --new-password=password`
+
 ![argocd dashboard](images/argocd_dashboard.png)
 
 Once these things have been verified, the Codespace is ready to use for the workshop!

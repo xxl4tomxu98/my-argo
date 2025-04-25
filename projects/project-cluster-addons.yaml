@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: cluster-addons
+  name: cluster-addons  # some kind of corporate std addons
   namespace: argocd
 spec:
   clusterResourceWhitelist:
@@ -10,6 +10,6 @@ spec:
   destinations: #Both "name" and "server" are used to cover all use cases
   - name: in-cluster
     namespace: '*'
-    server: https://kubernetes.default.svc
+    server: https://kubernetes.default.svc  # in the future server is not needed
   sourceRepos:
   - https://github.com/xxl4tomxu98/my-argo
