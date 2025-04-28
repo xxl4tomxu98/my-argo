@@ -14,10 +14,10 @@ spec:
   sourceRepos:
   - https://github.com/christianh814/simple-go
   roles:
-  - name: custom-project-role
+  - name: custom-project-role  # let new user assume new custom role RBAC Casbin
     description: The "custom-project-role" will be applied to "christian"
     groups:
-    - christian
+    - christian  # RBAC only works on groups
     policies:
     - p, proj:workloads:custom-project-role, projects, get, workloads, allow
     - p, proj:workloads:custom-project-role, applications, *, workloads/*, allow
